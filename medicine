@@ -1,0 +1,49 @@
+#include<iostream>
+using namespace std;
+#include<cstring>
+
+class medicine{
+	
+	private:
+		
+		char medicinename[10];
+		int medicine_no;
+		float price;
+		
+	public:
+		medicine();
+		medicine(char medicinename[],int medicine_no,float price);
+		void getmedicinename();
+		void getmedicine_no();
+		void getprice();
+};
+
+medicine::medicine(){
+	
+	strcpy(medicinename,"");
+	medicine_no =0;
+	price=0.0;
+}
+
+medicine::medicine(char medicinename[],int medicine_no,float price){
+	
+	strcpy(medicinename,medicinename);
+	medicine_no=medicine_no;
+	price=price;
+}
+
+void medicine::getmedicinename(){
+}
+
+void medicine::getmedicine_no(){
+}
+
+void medicine::getprice(){
+}
+
+int main()
+{
+	medicine("Astholin400",678,645);
+	
+	return 0;
+}
