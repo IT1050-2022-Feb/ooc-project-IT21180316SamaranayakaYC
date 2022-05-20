@@ -1,0 +1,50 @@
+#include<iostream>
+using namespace std;
+#include<cstring>
+
+
+class registeruser{
+	
+	private:
+		char username[10];
+		char email[20];
+		char feedbacks[];
+		
+	public:
+		
+		registeruser();
+		registeruser(char name[],char email[],char feedbacks[]);
+		void getusername();
+		void getemail();
+		void getfeedbacks();
+			
+};
+
+registeruser::registeruser(){
+	
+	strcpy(username, "");
+	strcpy(email, "");
+	strcpy(feedbacks, "");
+}
+
+registeruser::registeruser(char name[],char email[],char feedbacks[])
+{
+	strcpy(username ,name);
+	strcpy(email ,email);
+	strcpy(feedbacks, feedbacks);
+}
+
+void registeruser::getusername(){
+}
+
+void registeruser::getemail(){
+}
+
+void registeruser::getfeedbacks(){
+}
+
+int main(){
+	
+	registeruser("Nimesh Chanuka","ChanukaNimesh1999@gamil.com","Good servce++");
+	
+}
